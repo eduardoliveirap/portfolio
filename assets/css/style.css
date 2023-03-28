@@ -16,7 +16,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: rgb(255, 136, 0);
 }
 html{
     font-size: 62.5%;
