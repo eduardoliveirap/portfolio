@@ -26,13 +26,18 @@ window.onscroll = () => {
             });
         };
     })
-    let header = document.querySelectorAll('header');
-    header.classList.toggle('sticky', window.scrollY > 100);
+    let header = document.querySelector('header');
+    if (header) header.classList.toggle('sticky', window.scrollY > 100);
+
+
 
     menuIcon.classList.remove('navbar');
     navbar.classList.remove('active');
     
 
 };
+
+
+
 
 
