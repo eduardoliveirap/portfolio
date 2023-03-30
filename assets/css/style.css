@@ -11,9 +11,16 @@
     font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
 }
-body::-webkit-scrollbar {width: 10px;background: #0C0F08;}
-body::-webkit-scrollbar-track {background-color: var(--second-bg-color);}
-body::-webkit-scrollbar-thumb {background: var(--main-color);}
+body::-webkit-scrollbar {
+    width: 10px;background: var(--bg-color);
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--second-bg-color);
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--main-color);
+}
 :root{
     --bg-color: #1f242d;
     --second-bg-color: #323946;
@@ -323,6 +330,14 @@ span{
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer	;
+}
+.contact input:focus {
+    border: var(--main-color) solid 2px;
+    transition: .1s;
+}
+.contact textarea:focus {
+    border: var(--main-color) solid 2px;
+    transition: .1s;
 }
 .footer{
     display: flex;
