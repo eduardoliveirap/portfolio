@@ -18,14 +18,14 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    text-transform: lowercase;
 
 }
 
 body {
     height: 100%;
     background-color: var(--second-bg-color);
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: lowercase;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -34,7 +34,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1.5rem 9%;
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,6 @@ body {
 .logo{
     font-size: 1.5rem;
     color: var(--text-color);
-    margin-left: 4rem;
 }
 
 .container {
@@ -58,26 +57,23 @@ body {
 .ui {
     border: 0;
     border-radius: 10px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     padding: 10%;
     display: flex;
     gap: 20px;
-    background-color: var(--bg-color)
+    background-color: var(--bg-color);
 }
 
 .container-left {
     width: 50%;
-    font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
 }
 
 .container-right {
     width: 60%;
     display: flex;
-    text-transform: uppercase;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .card {
@@ -88,6 +84,7 @@ body {
     border: 1px solid rgba(0,0,0,.3);
     border-radius: 15px;
     text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .intern {
@@ -119,7 +116,8 @@ body {
 }
 
 .card label {
-    font-size: .7rem;
+    font-size: .4rem;
+    font-weight: 400;
 }
 
 .card-infos {
@@ -167,7 +165,7 @@ input#valid-thru-text, input#cvv-text {
 }
 
 input[type="submit"] {
-    width: 95%;
+    width: 90%;
     background-color: #008cb1;
     cursor: pointer;
 }
@@ -175,6 +173,7 @@ input[type="submit"] {
 .infos-container {
     display: flex;
 }
+
 
 @media (max-width: 1024px) {
     .ui {

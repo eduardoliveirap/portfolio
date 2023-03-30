@@ -33,7 +33,7 @@ cardNumber.addEventListener("keyup", (e) => {
 
 cardHolder.addEventListener("keyup", (e) => {
     if (!e.target.value) {
-        cardHolderText.innerHTML = "CARD HOLDER";
+        cardHolderText.innerHTML = "NOAH JACOB";
     } else {
         cardHolderText.innerHTML = e.target.value.toUpperCase();
     }
@@ -54,39 +54,16 @@ cardExpiration.addEventListener("keyup", (e) => {
     }
 })
 
-cardHolder.addEventListener("keyup", (e) => {
-    if(!e.target.value) {
-        cardHolderText.innerHTML = "CARD HOLDER";
-    } else {
-        cardHolderText.innerHTML = e.target.value.toUpperCase();
-    }
-})
-
-cardExpiration.addEventListener("keyup", (e) => {
-    if (e.target.value) {
-        cardExpirationText.innerHTML = "02/40";
-    } else{
-        const valuesOfInput = e.target.value.replace("/", "");
-
-        if(e.target.value.length > 2) {
-            e.target.value = valuesOfInput.replace(/^(\d{2})(\d{0,2})/, "$1/$2");
-            cardExpirationText.innerHTML = valuesOfInput.replace(/^(\d{2})(\d{0,2})/, "$1/$2");
-        } else {
-            cardExpirationText.innerHTML = valuesOfInput
-        }
-    } 
-})
-
 cardCVV.addEventListener("keyup", (e) => {
-    if(!e.target.value) {
-        cardCVVText.innerHTML = "123"
+    if (!e.target.value) {
+        cardCVVText.innerHTML = "123";
     } else {
         cardCVVText.innerHTML = e.target.value;
     }
-}) 
+})
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    alert("Credit Card added!")
+    alert("Credit Card Added!");
 })
