@@ -80,7 +80,7 @@ body {
     width: 360px;
     height: 230px;
     margin: 0 auto;
-    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(0,140,177,1) 35%, rgba(0,29,125,1) 100%);
+    background: var(--main-color);
     border: 1px solid rgba(0,0,0,.3);
     border-radius: 15px;
     text-transform: uppercase;
@@ -166,7 +166,7 @@ input#valid-thru-text, input#cvv-text {
 
 input[type="submit"] {
     width: 90%;
-    background-color: #008cb1;
+    background-color: var(--main-color);
     cursor: pointer;
 }
 
